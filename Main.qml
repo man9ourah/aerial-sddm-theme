@@ -83,10 +83,17 @@ Rectangle {
         }
         Keys.onPressed: {
             fader1.state = "on";
-            if (username_input_box.text == "")
+            /* if (username_input_box.text == "") */
+            /*     username_input_box.focus = true */
+            /* else */
+            /*     password_input_box.focus = true */
+            if (username_input_box.text == ""){
                 username_input_box.focus = true
-            else
+                username_input_box.text = event.text
+            }else{
                 password_input_box.focus = true
+                password_input_box.text = event.text
+            }
         }
     }
     WallpaperFader {
@@ -134,10 +141,17 @@ Rectangle {
         }
         Keys.onPressed: {
             fader2.state = "on";
-            if (username_input_box.text == "")
+            /* if (username_input_box.text == "") */
+            /*     username_input_box.focus = true */
+            /* else */
+            /*     password_input_box.focus = true */
+            if (username_input_box.text == ""){
                 username_input_box.focus = true
-            else
+                username_input_box.text = event.text
+            }else{
                 password_input_box.focus = true
+                password_input_box.text = event.text
+            }
         }
     }
 
