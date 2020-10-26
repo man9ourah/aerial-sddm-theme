@@ -31,7 +31,10 @@ Rectangle {
         }
     }
 
-    // Set Font
+    // Set fonts
+    FontLoader {
+        id: textFontClock; name: config.displayFontClock
+    }
     FontLoader {
         id: textFont; name: config.displayFont
     }
@@ -203,8 +206,8 @@ Rectangle {
             y: parent.height * config.relativePositionY - clock.height / 2
             x: parent.width * config.relativePositionX - clock.width / 2
             color: "white"
-            timeFont.family: textFont.name
-            dateFont.family: textFont.name
+            timeFont.family: textFontClock.name
+            dateFont.family: textFontClock.name
         }
 
         Rectangle {
