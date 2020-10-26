@@ -27,6 +27,7 @@ Rectangle {
         onLoginFailed: {
             error_message.color = "#dc322f"
             error_message.text = textConstants.loginFailed
+            password_input_box.text = ""
         }
     }
 
